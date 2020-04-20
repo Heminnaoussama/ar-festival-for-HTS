@@ -22,6 +22,8 @@
 
 # بالاعتماد على 
 https://github.com/linuxscout/festival-arabic
+
 https://github.com/Bangla-Language-Processing/Katha-Bangla-TTS
 https://github.com/youssefsharief/arabic_pronounce
+
 https://github.com/youssefsharief/arabic_pronunciation
