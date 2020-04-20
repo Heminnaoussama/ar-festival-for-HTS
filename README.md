@@ -18,7 +18,7 @@
 
 8- festvox/ara_norm_nawar_f0model.scm
 
-لحد الان أقوم بصناعة معجم اللغة في الملفين 1 و2 بالاضافة لتعديلات في ملفات اخرى لكنها غير ثابتة 
+لحد الان أقوم بصناعة معجم اللغة والفونيمات في الملفين 1 و2 بالاضافة لتعديلات في ملفات اخرى لكنها غير ثابتة 
 
 # بالاعتماد على 
 https://github.com/linuxscout/festival-arabic
@@ -28,3 +28,7 @@ https://github.com/Bangla-Language-Processing/Katha-Bangla-TTS
 https://github.com/youssefsharief/arabic_pronounce
 
 https://github.com/youssefsharief/arabic_pronunciation
+
+http://www.unicode.org/charts/PDF/U0600.pdf
+
+http://www.cstr.ed.ac.uk/projects/festival/manual/festival_13.html
