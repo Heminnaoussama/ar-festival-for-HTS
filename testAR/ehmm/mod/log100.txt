@@ -1,0 +1,60 @@
+Avg. likelihood: (1) -36.6072 1e+32
+Accepted sentences are: 1 / 1
+Avg. likelihood: (2) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (3) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (4) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (5) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (6) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (7) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (8) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (9) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (10) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (11) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (12) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (13) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (14) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (15) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (16) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (17) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (18) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (19) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (20) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (21) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (22) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (23) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (24) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (25) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (26) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (27) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (28) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (29) -nan -nan
+Accepted sentences are: 0 / 1
+Avg. likelihood: (30) -nan -nan
+Accepted sentences are: 0 / 1
