@@ -72,112 +72,112 @@
    (<   -   0   0   0   0   0   0   -) ;; hamza(ء) لا يهم اذا كانت فوق الف او واو او ياء او وحدها المهم صوتها))
    (<<  -   0   0   0   0   0   0   -) ;; hamza+shada
 
-   (b   -   0   0   0   0   0   0   -) ;; ba(ب)
-   (bb  -   0   0   0   0   0   0   -) ;; ba+shada
+   (b   -   0   0   0   0   s   l   +) ;; ba(ب)
+   (bb  -   0   0   0   0   s   l   +) ;; ba+shada
 
-   (t   -   0   0   0   0   0   0   -) ;;ta(ت)
-   (tt  -   0   0   0   0   0   0   -) ;;ta+shada
+   (t   -   0   0   0   0   s   a   -) ;;ta(ت)
+   (tt  -   0   0   0   0   s   a   -) ;;ta+shada
 
-   (^   -   0   0   0   0   0   0   -) ;; ^a(ث)
-   (^^  -   0   0   0   0   0   0   -) ;; ^a+ishala
+   (^   -   0   0   0   0   f   d   -) ;; ^a(ث)
+   (^^  -   0   0   0   0   f   d   -) ;; ^a+ishala
 
-   (j   -   0   0   0   0   0   0   -) ;;jim(ج)
-   (jj  -   0   0   0   0   0   0   -) ;;jim+shada
+   (j   -   0   0   0   0   a   p   +) ;;jim(ج)
+   (jj  -   0   0   0   0   a   p   +) ;;jim+shada
 
-   (H   -   0   0   0   0   0   0   -) ;; 7a(ح)
-   (HH  -   0   0   0   0   0   0   -) ;; 7a+shada
+   (H   -   0   0   0   0   f   g   -) ;; 7a(ح)
+   (HH  -   0   0   0   0   f   g   -) ;; 7a+shada
 
-   (x   -   0   0   0   0   0   0   -) ;;xa(خ)
-   (xx  -   0   0   0   0   0   0   -) ;;xa+shada
+   (x   -   0   0   0   0   s   v   -) ;;xa(خ)
+   (xx  -   0   0   0   0   s   v   -) ;;xa+shada
 
-   (d   -   0   0   0   0   0   0   -) ;; dal(د)
-   (dd  -   0   0   0   0   0   0   -) ;; dal+shada
+   (d   -   0   0   0   0   s   a   +) ;; dal(د)
+   (dd  -   0   0   0   0   s   a   +) ;; dal+shada
 
-   (*   -   0   0   0   0   0   0   -) ;; thal(ذ)
-   (**  -   0   0   0   0   0   0   -) ;; dal+shada
+   (*   -   0   0   0   0   f   d   +) ;; thal(ذ)
+   (**  -   0   0   0   0   f   d   +) ;; dal+shada
 
-   (r   -   0   0   0   0   0   0   -) ;;ra(ر)
-   (rr  -   0   0   0   0   0   0   -) ;;ra+shada
+   (r   -   0   0   0   0   r   a   +) ;;ra(ر)
+   (rr  -   0   0   0   0   r   a   +) ;;ra+shada
 
-   (z   -   0   0   0   0   0   0   -) ;;za(ز)
-   (zz  -   0   0   0   0   0   0   -) ;;za+shada
+   (z   -   0   0   0   0   f   a   +) ;;za(ز)
+   (zz  -   0   0   0   0   f   a   +) ;;za+shada
 
    (s   -   0   0   0   0   f   a   -) ;;sin(س)
-   (ss  -   0   0   0   0   0   0   -) ;;sin+shada
+   (ss  -   0   0   0   0   f   a   -) ;;sin+shada
 
-   ($   -   0   0   0   0   0   0   -) ;; shin(ش)
-   ($$  -   0   0   0   0   0   0   -) ;; shin+shada 
+   ($   -   0   0   0   0   f   p   -) ;; shin(ش)
+   ($$  -   0   0   0   0   f   p   -) ;; shin+shada 
 
-   (S   -   0   0   0   0   0   0   -) ;; sad(ص)
-   (SS  -   0   0   0   0   0   0   -) ;; sad+shada
+   (S   -   0   0   0   0   f   a   -) ;; sad(ص)
+   (SS  -   0   0   0   0   f   a   -) ;; sad+shada
 
-   (D   -   0   0   0   0   0   0   -) ;; dad(ض)
-   (DD  -   0   0   0   0   0   0   -) ;; dad+shada
+   (D   -   0   0   0   0   s   a   +) ;; dad(ض)
+   (DD  -   0   0   0   0   s   a   +) ;; dad+shada
 
-   (T   -   0   0   0   0   0   0   -) ;; Ta(ط)
-   (TT  -   0   0   0   0   0   0   -) ;; Ta+shada
+   (T   -   0   0   0   0   s   a   -) ;; Ta(ط)
+   (TT  -   0   0   0   0   s   a   -) ;; Ta+shada
 
-   (Z   -   0   0   0   0   0   0   -) ;; dad_ishala(ظ)
-   (ZZ  -   0   0   0   0   0   0   -) ;; dad_ishala+shada
+   (Z   -   0   0   0   0   f   a   +) ;; dad_ishala(ظ)
+   (ZZ  -   0   0   0   0   f   a   +) ;; dad_ishala+shada
 
-   (E   -   0   0   0   0   0   0   -) ;; ain(ع)
-   (EE  -   0   0   0   0   0   0   -) ;; ain+shada
+   (E   -   0   0   0   0   f   a   -) ;; ain(ع)
+   (EE  -   0   0   0   0   f   a   -) ;; ain+shada
 
-   (g   -   0   0   0   0   0   0   -) ;; ghin(غ)
-   (gg  -   0   0   0   0   0   0   -) ;; ghin+shada
+   (g   -   0   0   0   0   s   v   +) ;; ghin(غ)
+   (gg  -   0   0   0   0   s   v   +) ;; ghin+shada
 
-   (f   -   0   0   0   0   0   0   -) ;; fa(ف)
-   (ff  -   0   0   0   0   0   0   -) ;; fa+shada
+   (f   -   0   0   0   0   f   b   -) ;; fa(ف)
+   (ff  -   0   0   0   0   f   b   -) ;; fa+shada
 
-   (q   -   0   0   0   0   0   0   -) ;;qaf(ق)
-   (qq  -   0   0   0   0   0   0   -) ;;qaf+shada
+   (q   -   0   0   0   0   s   v   -) ;;qaf(ق)
+   (qq  -   0   0   0   0   s   v   -) ;;qaf+shada
 
-   (k   -   0   0   0   0   0   0   -) ;;kaf(ك)
-   (kk  -   0   0   0   0   0   0   -) ;;kaf+shada
+   (k   -   0   0   0   0   s   v   -) ;;kaf(ك)
+   (kk  -   0   0   0   0   s   v   -) ;;kaf+shada
 
-   (l   -   0   0   0   0   0   0   -) ;;lam(ل)
-   (ll  -   0   0   0   0   0   0   -) ;;lam+shada
+   (l   -   0   0   0   0   l   a   +) ;;lam(ل)
+   (ll  -   0   0   0   0   l   a   +) ;;lam+shada
 
-   (m   -   0   0   0   0   0   0   -) ;;mim(م)
-   (mm  -   0   0   0   0   0   0   -) ;;mim+shada
+   (m   -   0   0   0   0   n   l   +) ;;mim(م)
+   (mm  -   0   0   0   0   n   l   +) ;;mim+shada
 
-   (n   -   0   0   0   0   0   0   -) ;;noun(ن)
-   (nn  -   0   0   0   0   0   0   -) ;;noun+shada 
+   (n   -   0   0   0   0   n   a   +) ;;noun(ن)
+   (nn  -   0   0   0   0   n   a   +) ;;noun+shada 
 
-   (h   -   0   0   0   0   0   0   -) ;; ha(هـ)
-   (hh  -   0   0   0   0   0   0   -) ;; ha+shada
+   (h   -   0   0   0   0   f   g   -) ;; ha(هـ)
+   (hh  -   0   0   0   0   f   g   -) ;; ha+shada
 
-   (w   -   0   0   0   0   0   0   -) ;;wa(و)
-   (ww  -   0   0   0   0   0   0   -) ;;wa+shada
+   (w   -   0   0   0   0   r   l   +) ;;wa(و)
+   (ww  -   0   0   0   0   r   l   +) ;;wa+shada
 
-   (y   -   0   0   0   0   0   0   -) ;;ya(ي)
-   (yy  -   0   0   0   0   0   0   -) ;;ya+shada
+   (y   -   0   0   0   0   r   p   +) ;;ya(ي)
+   (yy  -   0   0   0   0   r   p   +) ;;ya+shada
 
-   (v   -   0   0   0   0   0   0   -) ;;
+   (v   -   0   0   0   0   0   0   -) ;;vidéo
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-   (a   -   0   0   0   0   0   0   -) ;;fatha
-   (aa  -   0   0   0   0   0   0   -) ;;fatha+mad
+   (a   +   s   3   2   -   0   0   0) ;;fatha
+   (aa  +   l   2   2   -   0   0   0) ;;fatha+mad
 
-   (A   -   0   0   0   0   0   0   -) ;; 
-   (AA  -   0   0   0   0   0   0   -) ;;
+   (A   +   s   3   2   -   0   0   0) ;; 
+   (AA  +   l   2   2   -   0   0   0) ;;
 
-   (i   -   0   0   0   0   0   0   -) ;;nawar:i0 kasra
-   (i:  -   0   0   0   0   0   0   -) ;;nawar:i1
-   (ii  -   0   0   0   0   0   0   -) ;;nawar:ii0 kasra+mad
+   (i   +   s   2   1   -   0   0   0) ;;nawar:i0 kasra
+   (i:  +   s   2   1   -   0   0   0) ;;nawar:i1
+   (ii  +   l   1   1   -   0   0   0) ;;nawar:ii0 kasra+mad
 
-   (I   -   0   0   0   0   0   0   -) ;;nawar:I0 
-   (II  -   0   0   0   0   0   0   -) ;;nawar:II0
+   (I   +   s   2   1   -   0   0   0) ;;nawar:I0 
+   (II  +   l   1   1   -   0   0   0) ;;nawar:II0
 
-   (u   -   0   0   0   0   0   0   -) ;;nawar:u0 dama
-   (uu  -   0   0   0   0   0   0   -) ;;nawar:uu0 dama+mad
+   (u   +   s   2   3   +   0   0   0) ;;nawar:u0 dama
+   (uu  +   l   1   3   +   0   0   0) ;;nawar:uu0 dama+mad
    
-   (U  -   0   0   0   0   0   0   -) ;;nawar:U0
-   (UU -   0   0   0   0   0   0   -) ;;nawar:UU0
+   (U   +   s   2   3   +   0   0   0) ;;nawar:U0
+   (UU  +   l   1   3   +   0   0   0) ;;nawar:UU0
 
-   (u:  -   0   0   0   0   0   0   -) ;;nawar:u1
-   (uu: -   0   0   0   0   0   0   -) ;;nawar:uu1
+   (u:  +   s   2   3   +   0   0   0) ;;nawar:u1
+   (uu: +   l   1   3   +   0   0   0) ;;nawar:uu1
 
    (sil -   0   0   0   0   0   0   -) ;;
 

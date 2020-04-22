@@ -306,18 +306,28 @@ t if this is a syl break, nil otherwise."
   ara_norm
 
   (;;start list
-
-	  ( csn > < } & \ b t ^ j H x d * r z s $ S D T Z E g f q k l m n h | ) ;;consonants
+	
+	;;first list unicode
+	  ( cs > < } & \ b t ^ j H x d * r z s $ S D T Z E g f q k l m n h | ) ;;consonants
 	  ( ept D S T Z g x q ) ;;emphatics
 	  ( fwe g x ) ;;forwardEmphatics
 	  ( amcsn l w y p ) ;;ambiguousConsonant ;;These consonants are only unambiguous in certain contexts
 
 	  ( dct o a u i F N K ~ ) ;;diacritics
 	  ( dtws o a u i F N K ) ;;diacriticsWithoutShadda
-	  );;end list
+	;;end
+
+	;;the list used after rules
+	  ( vy a i u ) ;;vowel
+	  ( cnt < b t ^ j H x d * r z s $ S D T Z E g f q l m n h w y ) ;;consonant
+
+
+  );;end list
    
 
   (;;start rules
+
+	  ( # [ s i l ] # = sil );;
 
 	;;;; Al chamsiya
 	  ( [ A l t ~ ] = < a tt )
@@ -334,6 +344,43 @@ t if this is a syl break, nil otherwise."
 	  ( [ A l Z ~ ] = < a ZZ )
 	  ( [ A l l ~ ] = < a ll )
 	  ( [ A l n ~ ] = < a nn )
+	;;;;
+
+	;;;;shada+kasratayn (mouchkil : al kasratayn touktaban kabla shada wa la nastati3 tahwil shada wahdaha)
+	  ( [ < K ~ ] = << i n )
+	  ( [ b K ~ ] = bb i n )
+	  ( [ t K ~ ] = tt i n )
+	  ( [ ^ K ~ ] = ^^ i n )
+	  ( [ j K ~ ] = jj i n )	
+	  ( [ H K ~ ] = HH i n )  
+	  ( [ x K ~ ] = xx i n )
+	  ( [ d K ~ ] = dd i n )
+	  ( [ * K ~ ] = ** i n )
+	  ( [ r K ~ ] = rr i n )
+	  ( [ z K ~ ] = zz i n )
+	  ( [ s K ~ ] = ss i n )
+	  ( [ $ K ~ ] = $$ i n )
+	  ( [ S K ~ ] = SS i n )
+	  ( [ D K ~ ] = DD i n )
+	  ( [ T K ~ ] = TT i n )
+	  ( [ Z K ~ ] = ZZ i n )
+	  ( [ E K ~ ] = EE i n )
+	  ( [ g K ~ ] = gg i n )
+	  ( [ f K ~ ] = ff i n )
+	  ( [ q K ~ ] = qq i n )
+	  ( [ k K ~ ] = kk i n )
+	  ( [ l K ~ ] = ll i n )
+	  ( [ m K ~ ] = mm i n )
+	  ( [ n K ~ ] = nn i n )
+	  ( [ h K ~ ] = hh i n )
+	  ( [ w K ~ ] = ww i n )
+	  ( [ y K ~ ] = yy i n )
+	;;
+	  ( [ > K ~ ] = << i n )		;;alif fawkaha hamza+shada
+	  ( [ "\'" K ~ ] = << i n )	;;hamza+shada
+	  ( [ } K ~ ] = << i n )		;;alif maksora fawkaha hamza+shada
+	  ( [ & K ~ ] = << i n )		;;waw fawkaha hamza+shada 
+	  ( [ | K ~ ] = << aa i n)	;;alif almad+shada 
 	;;;;
 	
 	;;;;shada
@@ -359,14 +406,18 @@ t if this is a syl break, nil otherwise."
 	  ( [ f ~ ] = ff )
 	  ( [ q ~ ] = qq )
 	  ( [ k ~ ] = kk )
+	  ( [ l ~ ] = ll )
 	  ( [ m ~ ] = mm )
 	  ( [ n ~ ] = nn )
 	  ( [ h ~ ] = hh )
-	;;
-	  ( [ l ~ ] = ll )
 	  ( [ w ~ ] = ww )
 	  ( [ y ~ ] = yy )
-	  ( [ p ~ ] = tt )
+	;;
+	  ( [ > ~ ] = << )	;;alif fawkaha hamza+shada
+	  ( [ "\'" ~ ] = << )	;;hamza+shada
+	  ( [ } ~ ] = << )	;;alif maksora fawkaha hamza+shada
+	  ( [ & ~ ] = << )	;;waw fawkaha hamza+shada 
+	  ( [ | ~ ] = << aa )	;;alif almad+shada 
 	;;
 	;;;;
 
@@ -393,39 +444,70 @@ t if this is a syl break, nil otherwise."
 	  ( [ f o ] = f )
 	  ( [ q o ] = q )
 	  ( [ k o ] = k )
+	  ( [ l o ] = l )
 	  ( [ m o ] = m )
 	  ( [ n o ] = n )
 	  ( [ h o ] = h )
-	;;
-	  ( [ l o ] = l )
 	  ( [ w o ] = w )
 	  ( [ y o ] = y )
-	  ( [ p o ] = t )
 	;;
-	;;;;
+	  ( [ > o ] = < )	;;alif fawkaha hamza+soukoun
+	  ( [ "\'" o ] = < )	;;hamza+soukoun
+	  ( [ } o ] = < )	;;alif maksora fawkaha hamza+soukoun
+	  ( [ & o ] = < )	;;waw fawkaha hamza+soukoun
+	  ( [ | o ] = < aa )	;;alif almad+soukoun
+	;;
 
-	;;;;Do some normalisation
-	  ( [ A F ] = F );;fathatan+alif=fathatan
-	  ( [ s i l ] = sil );;
+	;;;;do some normalisation
+	  ( [ A F ] = a n )	;;fathatan+alif=fathatan
+	  ( [ F A ] = a n)
 	  ( [ F ] = a n)
 	  ( [ N ] = u n)
 	  ( [ K ] = i n)
 	;;;;
 
-	;;;;
+	;;;;alif al kamariya
 	  ( # [ A ] = < a)
-	  ( [ a A ] = aa)
 	;;;;
 
+	;;;;alif maksora
+	  ( [ a Y ] = aa)	
+	  ( [ Y a ] = aa)
+	  ( [ i Y ] = ii)
+	  ( [ Y ] = aa)			
+	;;;;
 
+	;;;;alif
+	  ( [ a A ] = aa)	;;fatha+alif
+	  ( [ A ] = aa)		;;alif
+	;;;;
+
+	;;;;waw
+	  ( [ u w A ] # = uu)	;;dama+waw+alif
+	  ( [ u w ] # = uu)	;;dama+waw
+	  ( [ ~ w ] # = uu)	;;shada+waw
+	  ( [ u w ] cnt = uu)	;;dama+waw+harf
+	;;;;
+
+	;;;;kasra+ya
+	  ( [ i y ] # = ii)
+	  ( [ ~ y ] # = ii)
+	  ( [ i y ] cnt = ii)
+	;;;;
+
+        ;;;;ta marbota
+	  ( [ p ] # =  )
+	  ( [ p ] = t )
+        ;;;;
  
         ;;;;vowel
 	  ( [ a ] = a )
 	  ( [ i ] = i )
 	  ( [ u ] = u )
+	  ( [ o ] =  )
         ;;;;
 
-	;;;;unambiguousConsonantMap
+	;;;;Consonant
 	  ( [ < ] = < )
 	  ( [ b ] = b )
 	  ( [ t ] = t )
@@ -448,23 +530,19 @@ t if this is a syl break, nil otherwise."
 	  ( [ f ] = f )
 	  ( [ q ] = q )
 	  ( [ k ] = k )
+	  ( [ l ] = l )
 	  ( [ m ] = m )
 	  ( [ n ] = n )
 	  ( [ h ] = h )
-	;;
-	  ( [ > ] = < );;alif fawkaha hamza
-	  ( [ "\'" ] = < );;hamza
-	  ( [ } ] = < );;alif maksora fawkaha hamza
-	  ( [ & ] = < );;waw fawkaha hamza 
-	  ( [ | ] = < aa );;alif almad 
-        ;;
-
-        ;;;;ambiguousConsonant
-	  ( [ l ] = l )
 	  ( [ w ] = w )
 	  ( [ y ] = y )
-	  ( [ p ] = t )
-        ;;;;
+	;;
+	  ( [ > ] = < )		;;alif fawkaha hamza
+	  ( [ "\'" ] = < )	;;hamza
+	  ( [ } ] = < )		;;alif maksora fawkaha hamza
+	  ( [ & ] = < )		;;waw fawkaha hamza 
+	  ( [ | ] = < aa )	;;alif almad 
+        ;;
 
         ;;;;madda
         ;;;;
