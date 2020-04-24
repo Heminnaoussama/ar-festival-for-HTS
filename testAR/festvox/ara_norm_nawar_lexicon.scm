@@ -68,9 +68,305 @@ Basic lexicon should (must ?) have basic letters, symbols and punctuation."
 (lex.add.entry '("?" punc nil))
 (lex.add.entry '("!" punc nil))
 
-;;;; waraj~aHa ->  w a r a jj a H a 
-;(lex.add.entry  
-;'("waraj~aHa" nil (((w a) 0) ((r a jj) 1) ((a H a) 0))))
+;;m=هذا
+(lex.add.entry  
+'("h*A" nil (((h aa) 0) ((th aa) 0))))  
+(lex.add.entry  
+'("ha*aA" nil (((h aa) 0) ((th aa) 0)))) 
+;;m=بهذا
+(lex.add.entry  
+'("bh*A" nil (((b i) 0) ((h aa) 0) ((th aa) 0))))  
+(lex.add.entry  
+'("biha*aA" nil (((b i) 0) ((h aa) 0) ((th aa) 0))))  
+;;m=كهذا
+(lex.add.entry  
+'("kh*A" nil (((k a) 0) ((h aa) 0) ((th aa) 0)))) 
+(lex.add.entry   
+'("kaha*aA" nil (((k a) 0) ((h aa) 0) ((th aa) 0)))) 
+;;m=فهذا
+(lex.add.entry  
+'("fh*A" nil (((f a) 0) ((h aa) 0) ((th aa) 0)))) 
+(lex.add.entry  
+'("faha*aA" nil (((f a) 0) ((h aa) 0) ((th aa) 0)))) 
+;;m=هذه
+(lex.add.entry  
+'("h*h" nil (((h aa) 0) ((th i) 0) ((h i) 0)))) 
+(lex.add.entry  
+'("ha*ihi" nil (((h aa) 0) ((th i) 0) ((h i) 0)))) 
+;;m=بهذه
+(lex.add.entry  
+'("bh*h" nil (((b i) 0) ((h aa) 0) ((th i) 0) ((h i) 0)))) 
+(lex.add.entry  
+'("biha*ihi" nil (((b i) 0) ((h aa) 0) ((th i) 0) ((h i) 0)))) 
+;;m=كهذه
+(lex.add.entry  
+'("kh*h" nil (((k a) 0) ((h aa) 0) ((th i) 0) ((h i) 0)))) 
+(lex.add.entry  
+'("kaha*ihi" nil (((k a) 0) ((h aa) 0) ((th i) 0) ((h i) 0)))) 
+;;m=فهذه
+(lex.add.entry  
+'("fh*h" nil (((f a) 0) ((h aa) 0) ((th i) 0) ((h i) 0)))) 
+(lex.add.entry  
+'("faha*ihi" nil (((f a) 0) ((h aa) 0) ((th i) 0) ((h i) 0)))) 
+;;m=هذان
+(lex.add.entry  
+'("h*An" nil (((h aa) 0) ((th aa) 0) ((n i) 0))))
+(lex.add.entry  
+'("ha*aAni" nil (((h aa) 0) ((th aa) 0) ((n i) 0))))
+;;m=هؤلاء
+(lex.add.entry  
+'("h&lA\'" nil (((h aa) 0) ((ah u) 0) ((l aa) 0) ((ah i) 0)))) 
+(lex.add.entry  
+'("ha&ulaA\'i" nil (((h aa) 0) ((ah u) 0) ((l aa) 0) ((ah i) 0)))) 
+;;m=ذلك
+(lex.add.entry  
+'("*lk" nil (((th aa) 0) ((l i) 0) ((k a) 0))))
+(lex.add.entry  
+'("*alika" nil (((th aa) 0) ((l i) 0) ((k a) 0))))
+;;m=بذلك
+(lex.add.entry  
+'("b*lk" nil (((b i) 0) ((th aa) 0) ((l i) 0) ((k a) 0))))
+(lex.add.entry  
+'("bi*alika" nil (((b i) 0) ((th aa) 0) ((l i) 0) ((k a) 0))))
+;;m=كذلك
+(lex.add.entry  
+'("k*lk" nil (((k a) 0) ((th aa) 0) ((l i) 0) ((k a) 0))))
+(lex.add.entry  
+'("ka*alika" nil (((k a) 0) ((th aa) 0) ((l i) 0) ((k a) 0))))
+;;m=ذلكم
+(lex.add.entry  
+'("*lkm" nil (((th aa) 0) ((l i) 0) ((k u m) 0))))
+(lex.add.entry  
+'("*alikumo" nil (((th aa) 0) ((l i) 0) ((k u m) 0))))
+;;m=أولئك
+(lex.add.entry  
+'(">wl}k" nil (((ah u) 0) ((l aa) 0) ((ah i) 0) ((k a) 0))))
+(lex.add.entry  
+'(">uwla}ika" nil (((ah u) 0) ((l aa) 0) ((ah i) 0) ((k a) 0))))
+;;m=طه
+(lex.add.entry  
+'("Th" nil (((T aa) 0) ((h a) 0))))
+(lex.add.entry  
+'("Taha" nil (((T aa) 0) ((h a) 0))))
+;;m=لكن
+(lex.add.entry  
+'("lkn" nil (((l aa) 0) ((k i) 0) ((nn a) 0))))
+(lex.add.entry  
+'("lakin~a" nil (((l aa) 0) ((k i) 0) ((nn a) 0))))
+(lex.add.entry  
+'("lakino" nil (((l aa) 0) ((k i n) 0))))
+;;m=لكنه 
+(lex.add.entry  
+'("lknh" nil (((l aa) 0) ((k i) 0) ((nn a) 0) ((h u) 0))))
+(lex.add.entry  
+'("lakin~ahu" nil (((l aa) 0) ((k i) 0) ((nn a) 0) ((h u) 0))))
+;;m=لكنها 
+(lex.add.entry  
+'("lknhA" nil (((l aa) 0) ((k i) 0) ((nn a) 0) ((h aa) 0))))
+(lex.add.entry  
+'("lakin~ahaA" nil (((l aa) 0) ((k i) 0) ((nn a) 0) ((h aa) 0))))
+;;m=لكنهم 
+(lex.add.entry  
+'("lknhm" nil (((l aa) 0) ((k i) 0) ((nn a) 0) ((h u m) 0))))
+(lex.add.entry  
+'("lakin~ahumo" nil (((l aa) 0) ((k i) 0) ((nn a) 0) ((h u m) 0))))
+;;m=لكنك 
+(lex.add.entry  
+'("lakin~aka" nil (((l aa) 0) ((k i) 0) ((nn a) 0) ((k a) 0))))
+(lex.add.entry  
+'("lakin~aki" nil (((l aa) 0) ((k i) 0) ((nn a) 0) ((k i) 0))))
+;;m=لكنكم 
+(lex.add.entry  
+'("lknkm" nil (((l aa) 0) ((k i) 0) ((nn a) 0) ((k u m) 0))))
+(lex.add.entry  
+'("lakin~akumo" nil (((l aa) 0) ((k i) 0) ((nn a) 0) ((k u m) 0))))
+;;m=لكنكما 
+(lex.add.entry  
+'("lknkmA" nil (((l aa) 0) ((k i) 0) ((nn a) 0) ((k u) 0) ((m aa) 0))))
+(lex.add.entry  
+'("lakin~akumaA" nil (((l aa) 0) ((k i) 0) ((nn a) 0) ((k u) 0) ((m aa) 0))))
+;;m=لكننا 
+(lex.add.entry  
+'("lknnA" nil (((l aa) 0) ((k i) 0) ((nn a) 0) ((n aa) 0))))
+(lex.add.entry  
+'("lakin~anaA" nil (((l aa) 0) ((k i) 0) ((nn a) 0) ((n aa) 0))))
+;;m=هذين
+(lex.add.entry  
+'("h*yn" nil (((h aa) 0) ((th a y) 0) ((n i) 0))))  
+(lex.add.entry  
+'("ha*ayoni" nil (((h aa) 0) ((th a y) 0) ((n i) 0))))  
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;; + waw +;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;m=وهذا
+(lex.add.entry  
+'("wh*A" nil (((w a) 0) ((h aa) 0) ((th aa) 0))))  
+(lex.add.entry  
+'("waha*aA" nil (((w a) 0) ((h aa) 0) ((th aa) 0)))) 
+;;m=وبهذا
+(lex.add.entry  
+'("wbh*A" nil (((w a) 0) ((b i) 0) ((h aa) 0) ((th aa) 0))))  
+(lex.add.entry  
+'("wabiha*aA" nil (((w a) 0) ((b i) 0) ((h aa) 0) ((th aa) 0))))  
+;;m=وكهذا
+(lex.add.entry  
+'("wkh*A" nil (((w a) 0) ((k a) 0) ((h aa) 0) ((th aa) 0)))) 
+(lex.add.entry   
+'("wakaha*aA" nil (((w a) 0) ((k a) 0) ((h aa) 0) ((th aa) 0)))) 
+;;m=وهذه
+(lex.add.entry  
+'("wh*h" nil (((w a) 0) ((h aa) 0) ((th i) 0) ((h i) 0)))) 
+(lex.add.entry  
+'("waha*ihi" nil (((w a) 0) ((h aa) 0) ((th i) 0) ((h i) 0)))) 
+;;m=وبهذه
+(lex.add.entry  
+'("wbh*h" nil (((w a) 0) ((b i) 0) ((h aa) 0) ((th i) 0) ((h i) 0)))) 
+(lex.add.entry  
+'("wabiha*ihi" nil (((w a) 0) ((b i) 0) ((h aa) 0) ((th i) 0) ((h i) 0)))) 
+;;m=وكهذه
+(lex.add.entry  
+'("wkh*h" nil (((w a) 0) ((k a) 0) ((h aa) 0) ((th i) 0) ((h i) 0)))) 
+(lex.add.entry  
+'("wakaha*ihi" nil (((w a) 0) ((k a) 0) ((h aa) 0) ((th i) 0) ((h i) 0)))) 
+;;m=وهذان
+(lex.add.entry  
+'("wh*An" nil (((w a) 0) ((h aa) 0) ((th aa) 0) ((n i) 0))))
+(lex.add.entry  
+'("waha*aAni" nil (((w a) 0) ((h aa) 0) ((th aa) 0) ((n i) 0))))
+;;m=وهؤلاء
+(lex.add.entry  
+'("wh&lA\'" nil (((w a) 0) ((h aa) 0) ((ah u) 0) ((l aa) 0) ((ah i) 0)))) 
+(lex.add.entry  
+'("waha&ulaA\'i" nil (((w a) 0) ((h aa) 0) ((ah u) 0) ((l aa) 0) ((ah i) 0)))) 
+;;m=وذلك
+(lex.add.entry  
+'("w*lk" nil (((w a) 0) ((th aa) 0) ((l i) 0) ((k a) 0))))
+(lex.add.entry  
+'("wa*alika" nil (((w a) 0) ((th aa) 0) ((l i) 0) ((k a) 0))))
+;;m=وبذلك
+(lex.add.entry  
+'("wb*lk" nil (((w a) 0) ((b i) 0) ((th aa) 0) ((l i) 0) ((k a) 0))))
+(lex.add.entry  
+'("wabi*alika" nil (((w a) 0) ((b i) 0) ((th aa) 0) ((l i) 0) ((k a) 0))))
+;;m=وكذلك
+(lex.add.entry  
+'("wk*lk" nil (((w a) 0) ((k a) 0) ((th aa) 0) ((l i) 0) ((k a) 0))))
+(lex.add.entry  
+'("waka*alika" nil (((w a) 0) ((k a) 0) ((th aa) 0) ((l i) 0) ((k a) 0))))
+;;m=وذلكم
+(lex.add.entry  
+'("w*lkm" nil (((w a) 0) ((th aa) 0) ((l i) 0) ((k u m) 0))))
+(lex.add.entry  
+'("wa*alikumo" nil (((w a) 0) ((th aa) 0) ((l i) 0) ((k u m) 0))))
+;;m=وأولئك
+(lex.add.entry  
+'("w>wl}k" nil (((w a) 0) ((ah u) 0) ((l aa) 0) ((ah i) 0) ((k a) 0))))
+(lex.add.entry  
+'("wa>uwla}ika" nil (((w a) 0) ((ah u) 0) ((l aa) 0) ((ah i) 0) ((k a) 0))))
+;;m=وطه
+(lex.add.entry  
+'("wTh" nil (((w a) 0) ((T aa) 0) ((h a) 0))))
+(lex.add.entry  
+'("waTaha" nil (((w a) 0) ((T aa) 0) ((h a) 0))))
+;;m=ولكن
+(lex.add.entry  
+'("wlkn" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0))))
+(lex.add.entry  
+'("walakin~a" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0))))
+(lex.add.entry  
+'("walakino" nil (((w a) 0) ((l aa) 0) ((k i n) 0))))
+;;m=ولكنه 
+(lex.add.entry  
+'("wlknh" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0) ((h u) 0))))
+(lex.add.entry  
+'("walakin~ahu" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0) ((h u) 0))))
+;;m=ولكنها 
+(lex.add.entry  
+'("wlknhA" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0) ((h aa) 0))))
+(lex.add.entry  
+'("walakin~ahaA" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0) ((h aa) 0))))
+;;m=ولكنهم 
+(lex.add.entry  
+'("wlknhm" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0) ((h u m) 0))))
+(lex.add.entry  
+'("walakin~ahumo" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0) ((h u m) 0))))
+;;m=ولكنك 
+(lex.add.entry  
+'("wlakin~aka" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0) ((k a) 0))))
+(lex.add.entry  
+'("walakin~aki" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0) ((k i) 0))))
+;;m=ولكنكم 
+(lex.add.entry  
+'("wlknkm" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0) ((k u m) 0))))
+(lex.add.entry  
+'("walakin~akumo" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0) ((k u m) 0))))
+;;m=ولكنكما 
+(lex.add.entry  
+'("wlknkmA" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0) ((k u) 0) ((m aa) 0))))
+(lex.add.entry  
+'("walakin~akumaA" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0) ((k u) 0) ((m aa) 0))))
+;;m=ولكننا 
+(lex.add.entry  
+'("wlknnA" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0) ((n aa) 0))))
+(lex.add.entry  
+'("walakin~anaA" nil (((w a) 0) ((l aa) 0) ((k i) 0) ((nn a) 0) ((n aa) 0))))
+;;m=وهذين
+(lex.add.entry  
+'("wh*yn" nil (((w a) 0) ((h aa) 0) ((th a y) 0) ((n i) 0))))  
+(lex.add.entry  
+'("waha*ayoni" nil (((w a) 0) ((h aa) 0) ((th a y) 0) ((n i) 0))))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;m=و 
+(lex.add.entry  
+'("w" nil (((w a) 0))))
+;;m=او 
+(lex.add.entry  
+'("Aw" nil (((ah a w) 0))))
+(lex.add.entry  
+'("Awo" nil (((ah a w) 0))))
+;;m=أو 
+(lex.add.entry  
+'(">w" nil (((ah a w) 0))))
+(lex.add.entry  
+'(">wo" nil (((ah a w) 0))))
+;;m=الف   
+(lex.add.entry  
+'("Alf" nil (((ah a l f) 0))))
+;;m=ألف   
+(lex.add.entry  
+'(">lf" nil (((ah a l f) 0))))
+;;m=بألف   
+(lex.add.entry  
+'("b>lf" nil (((b i) 0) ((ah a l f) 0))))
+;;m=فألف   
+(lex.add.entry  
+'("f>lf" nil (((f a) 0) ((ah a l f) 0))))
+;;m=والف   
+(lex.add.entry  
+'("wAlf" nil (((w a) 0) ((ah a l f) 0))))
+;;m=وألف   
+(lex.add.entry  
+'("w>lf" nil (((w a) 0) ((ah a l f) 0))))
+;;m=وبألف   
+(lex.add.entry  
+'("wb>lf" nil (((w a) 0) ((b i) 0) ((ah a l f) 0))))
+;;m=نت 
+(lex.add.entry  
+'("nt" nil (((n i t) 0))))
+;;m=فيديو   
+(lex.add.entry  
+'("fydyw" nil (((v i) 0) ((d y uu) 0))))
+;;m=فيديو   
+(lex.add.entry  
+'("fiydoyuw" nil (((v i) 0) ((d y uu) 0))))
+;;m=الفيديو   
+(lex.add.entry  
+'("Alfydyw" nil (((ah a l) 0) ((v i) 0) ((d y uu) 0))))
+(lex.add.entry  
+'("Alofiydoyuw" nil (((ah a l) 0) ((v i) 0) ((d y uu) 0))))	
+(lex.add.entry  
+'("Alofiydoyuwu" nil (((ah a l) 0) ((v i) 0) ((d y uu) 0))))
 
 )
 
@@ -319,7 +615,7 @@ t if this is a syl break, nil otherwise."
 
 	;;the list used after rules
 	  ( vy a i u ) ;;vowel
-	  ( cnt < b t ^ j H x d * r z s $ S D T Z E g f q l m n h w y ) ;;consonant
+	  ( cnt ah b t ^ j H x d th r z s ch S D T Z E g f q l m n h w y ) ;;consonant
 
 
   );;end list
@@ -330,24 +626,24 @@ t if this is a syl break, nil otherwise."
 	  ( # [ s i l ] # = sil );;
 
 	;;;; Al chamsiya
-	  ( [ A l t ~ ] = < a tt )
-	  ( [ A l ^ ~ ] = < a ^^ )
-	  ( [ A l d ~ ] = < a dd )
-	  ( [ A l * ~ ] = < a ** )
-	  ( [ A l r ~ ] = < a rr )
-	  ( [ A l z ~ ] = < a zz )
-	  ( [ A l s ~ ] = < a ss )
-	  ( [ A l $ ~ ] = < a $$ )
-	  ( [ A l S ~ ] = < a SS )
-	  ( [ A l D ~ ] = < a DD )
-	  ( [ A l T ~ ] = < a TT )
-	  ( [ A l Z ~ ] = < a ZZ )
-	  ( [ A l l ~ ] = < a ll )
-	  ( [ A l n ~ ] = < a nn )
+	  ( [ A l t ~ ] = ah a tt )
+	  ( [ A l ^ ~ ] = ah a ^^ )
+	  ( [ A l d ~ ] = ah a dd )
+	  ( [ A l * ~ ] = ah a thh )
+	  ( [ A l r ~ ] = ah a rr )
+	  ( [ A l z ~ ] = ah a zz )
+	  ( [ A l s ~ ] = ah a ss )
+	  ( [ A l $ ~ ] = ah a chh )
+	  ( [ A l S ~ ] = ah a SS )
+	  ( [ A l D ~ ] = ah a DD )
+	  ( [ A l T ~ ] = ah a TT )
+	  ( [ A l Z ~ ] = ah a ZZ )
+	  ( [ A l l ~ ] = ah a ll )
+	  ( [ A l n ~ ] = ah a nn )
 	;;;;
 
 	;;;;shada+kasratayn (mouchkil : al kasratayn touktaban kabla shada wa la nastati3 tahwil shada wahdaha)
-	  ( [ < K ~ ] = << i n )
+	  ( [ < K ~ ] = ahh i n )
 	  ( [ b K ~ ] = bb i n )
 	  ( [ t K ~ ] = tt i n )
 	  ( [ ^ K ~ ] = ^^ i n )
@@ -355,11 +651,11 @@ t if this is a syl break, nil otherwise."
 	  ( [ H K ~ ] = HH i n )  
 	  ( [ x K ~ ] = xx i n )
 	  ( [ d K ~ ] = dd i n )
-	  ( [ * K ~ ] = ** i n )
+	  ( [ * K ~ ] = thh i n )
 	  ( [ r K ~ ] = rr i n )
 	  ( [ z K ~ ] = zz i n )
 	  ( [ s K ~ ] = ss i n )
-	  ( [ $ K ~ ] = $$ i n )
+	  ( [ $ K ~ ] = chh i n )
 	  ( [ S K ~ ] = SS i n )
 	  ( [ D K ~ ] = DD i n )
 	  ( [ T K ~ ] = TT i n )
@@ -376,15 +672,15 @@ t if this is a syl break, nil otherwise."
 	  ( [ w K ~ ] = ww i n )
 	  ( [ y K ~ ] = yy i n )
 	;;
-	  ( [ > K ~ ] = << i n )		;;alif fawkaha hamza+shada
-	  ( [ "\'" K ~ ] = << i n )	;;hamza+shada
-	  ( [ } K ~ ] = << i n )		;;alif maksora fawkaha hamza+shada
-	  ( [ & K ~ ] = << i n )		;;waw fawkaha hamza+shada 
-	  ( [ | K ~ ] = << aa i n)	;;alif almad+shada 
+	  ( [ > K ~ ] = ahh i n )		;;alif fawkaha hamza+shada
+	  ( [ "\'" K ~ ] = ahh i n )	;;hamza+shada
+	  ( [ } K ~ ] = ahh i n )		;;alif maksora fawkaha hamza+shada
+	  ( [ & K ~ ] = ahh i n )		;;waw fawkaha hamza+shada 
+	  ( [ | K ~ ] = ahh aa i n)	;;alif almad+shada 
 	;;;;
 	
 	;;;;shada
-	  ( [ < ~ ] = << )
+	  ( [ < ~ ] = ahh )
 	  ( [ b ~ ] = bb )
 	  ( [ t ~ ] = tt )
 	  ( [ ^ ~ ] = ^^ )
@@ -392,11 +688,11 @@ t if this is a syl break, nil otherwise."
 	  ( [ H ~ ] = HH )  
 	  ( [ x ~ ] = xx )
 	  ( [ d ~ ] = dd )
-	  ( [ * ~ ] = ** )
+	  ( [ * ~ ] = thh )
 	  ( [ r ~ ] = rr )
 	  ( [ z ~ ] = zz )
 	  ( [ s ~ ] = ss )
-	  ( [ $ ~ ] = $$ )
+	  ( [ $ ~ ] = chh )
 	  ( [ S ~ ] = SS )
 	  ( [ D ~ ] = DD )
 	  ( [ T ~ ] = TT )
@@ -413,16 +709,16 @@ t if this is a syl break, nil otherwise."
 	  ( [ w ~ ] = ww )
 	  ( [ y ~ ] = yy )
 	;;
-	  ( [ > ~ ] = << )	;;alif fawkaha hamza+shada
-	  ( [ "\'" ~ ] = << )	;;hamza+shada
-	  ( [ } ~ ] = << )	;;alif maksora fawkaha hamza+shada
-	  ( [ & ~ ] = << )	;;waw fawkaha hamza+shada 
-	  ( [ | ~ ] = << aa )	;;alif almad+shada 
+	  ( [ > ~ ] = ahh )	;;alif fawkaha hamza+shada
+	  ( [ "\'" ~ ] = ahh )	;;hamza+shada
+	  ( [ } ~ ] = ahh )	;;alif maksora fawkaha hamza+shada
+	  ( [ & ~ ] = ahh )	;;waw fawkaha hamza+shada 
+	  ( [ | ~ ] = ahh aa )	;;alif almad+shada 
 	;;
 	;;;;
 
 	;;;;soukoun
-	  ( [ < o ] = < )
+	  ( [ < o ] = ah )
 	  ( [ b o ] = b )
 	  ( [ t o ] = t )
 	  ( [ ^ o ] = ^ )
@@ -430,11 +726,11 @@ t if this is a syl break, nil otherwise."
 	  ( [ H o ] = H )  
 	  ( [ x o ] = x )
 	  ( [ d o ] = d )
-	  ( [ * o ] = * )
+	  ( [ * o ] = th )
 	  ( [ r o ] = r )
 	  ( [ z o ] = z )
 	  ( [ s o ] = s )
-	  ( [ $ o ] = $ )
+	  ( [ $ o ] = ch )
 	  ( [ S o ] = S )
 	  ( [ D o ] = D )
 	  ( [ T o ] = T )
@@ -451,11 +747,11 @@ t if this is a syl break, nil otherwise."
 	  ( [ w o ] = w )
 	  ( [ y o ] = y )
 	;;
-	  ( [ > o ] = < )	;;alif fawkaha hamza+soukoun
-	  ( [ "\'" o ] = < )	;;hamza+soukoun
-	  ( [ } o ] = < )	;;alif maksora fawkaha hamza+soukoun
-	  ( [ & o ] = < )	;;waw fawkaha hamza+soukoun
-	  ( [ | o ] = < aa )	;;alif almad+soukoun
+	  ( [ > o ] = ah )	;;alif fawkaha hamza+soukoun
+	  ( [ "\'" o ] = ah )	;;hamza+soukoun
+	  ( [ } o ] = ah )	;;alif maksora fawkaha hamza+soukoun
+	  ( [ & o ] = ah )	;;waw fawkaha hamza+soukoun
+	  ( [ | o ] = ah aa )	;;alif almad+soukoun
 	;;
 
 	;;;;do some normalisation
@@ -467,7 +763,7 @@ t if this is a syl break, nil otherwise."
 	;;;;
 
 	;;;;alif al kamariya
-	  ( # [ A ] = < a)
+	  ( # [ A ] = ah a)
 	;;;;
 
 	;;;;alif maksora
@@ -508,7 +804,7 @@ t if this is a syl break, nil otherwise."
         ;;;;
 
 	;;;;Consonant
-	  ( [ < ] = < )
+	  ( [ < ] = ah )
 	  ( [ b ] = b )
 	  ( [ t ] = t )
 	  ( [ ^ ] = ^ )
@@ -516,11 +812,11 @@ t if this is a syl break, nil otherwise."
 	  ( [ H ] = H )  
 	  ( [ x ] = x )
 	  ( [ d ] = d )
-	  ( [ * ] = * )
+	  ( [ * ] = th )
 	  ( [ r ] = r )
 	  ( [ z ] = z )
 	  ( [ s ] = s )
-	  ( [ $ ] = $ )
+	  ( [ $ ] = ch )
 	  ( [ S ] = S )
 	  ( [ D ] = D )
 	  ( [ T ] = T )
@@ -537,11 +833,11 @@ t if this is a syl break, nil otherwise."
 	  ( [ w ] = w )
 	  ( [ y ] = y )
 	;;
-	  ( [ > ] = < )		;;alif fawkaha hamza
-	  ( [ "\'" ] = < )	;;hamza
-	  ( [ } ] = < )		;;alif maksora fawkaha hamza
-	  ( [ & ] = < )		;;waw fawkaha hamza 
-	  ( [ | ] = < aa )	;;alif almad 
+	  ( [ > ] = ah )		;;alif fawkaha hamza
+	  ( [ "\'" ] = ah )	;;hamza
+	  ( [ } ] = ah )		;;alif maksora fawkaha hamza
+	  ( [ & ] = ah )		;;waw fawkaha hamza 
+	  ( [ | ] = ah aa )	;;alif almad 
         ;;
 
         ;;;;madda
