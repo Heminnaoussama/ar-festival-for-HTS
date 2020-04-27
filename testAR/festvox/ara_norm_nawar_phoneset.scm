@@ -86,71 +86,72 @@
    (x    -   0   0   0   0   f   v   -) ;;xa(خ)
    (xx   -   0   0   0   0   f   v   -) ;;xa+shada
 
-   (d    -   0   0   0   0   s   a   +) ;; dal(د)
+   (d    -   0   0   0   0   s   a   +) ;; dal(د) Voiced dental and alveolar stops
    (dd   -   0   0   0   0   s   a   +) ;; dal+shada
 
-   (th   -   0   0   0   0   f   d   +) ;; thal(ذ)
+   (th   -   0   0   0   0   f   d   +) ;; thal(ذ) Voiced dental fricative
    (thh  -   0   0   0   0   f   d   +) ;; dal+shada
 
-   (r    -   0   0   0   0   l   a   +) ;;ra(ر)
+   (r    -   0   0   0   0   l   a   +) ;;ra(ر) Voiced dental, alveolar and postalveolar trills
    (rr   -   0   0   0   0   l   a   +) ;;ra+shada
 
-   (z    -   0   0   0   0   f   a   +) ;;za(ز)
+   (z    -   0   0   0   0   f   a   +) ;;za(ز) Voiced alveolar fricative
    (zz   -   0   0   0   0   f   a   +) ;;za+shada
 
-   (s    -   0   0   0   0   f   a   -) ;;sin(س)
+   (s    -   0   0   0   0   f   a   -) ;;sin(س) Voiceless alveolar fricative /Voiceless alveolar sibilants 
    (ss   -   0   0   0   0   f   a   -) ;;sin+shada
 
-   (ch   -   0   0   0   0   f   p   -) ;; shin(ش)
+   (ch   -   0   0   0   0   f   p   -) ;; shin(ش) Voiceless palato-alveolar fricative
    (chh  -   0   0   0   0   f   p   -) ;; shin+shada 
 
-   (S    -   0   0   0   0   f   a   -) ;; sad(ص)
+   (S    -   0   0   0   0   f   a   -) ;; sad(ص) unvoiced pharyngealized apical alveolar sibilant fricative
    (SS   -   0   0   0   0   f   a   -) ;; sad+shada
 
-   (D    -   0   0   0   0   s   a   +) ;; dad(ض)
+   (D    -   0   0   0   0   s   a   +) ;; dad(ض) voiced unaspirated pharyngealized apical alveolar stop
    (DD   -   0   0   0   0   s   a   +) ;; dad+shada
 
-   (T    -   0   0   0   0   s   a   -) ;; Ta(ط)
+   (T    -   0   0   0   0   s   a   -) ;; Ta(ط) unvoiced unaspirated pharyngealized apical alveolar stop
    (TT   -   0   0   0   0   s   a   -) ;; Ta+shada
 
-   (Z    -   0   0   0   0   f   d   +) ;; dad_ishala(ظ)
-   (ZZ   -   0   0   0   0   f   d   +) ;; dad_ishala+shada
+   (Z    -   0   0   0   0   f   a   +) ;; dad_ishala(ظ) voiced pharyngealized apical alveolar sibilant fricative
+   (ZZ   -   0   0   0   0   f   a   +) ;; dad_ishala+shada
 
-   (E    -   0   0   0   0   f   v   +) ;; ain(ع)
+   (E    -   0   0   0   0   f   v   +) ;; ain(ع) voiced radical pharyngeal non sibilant fricative
    (EE   -   0   0   0   0   f   v   +) ;; ain+shada
 
-   (g    -   0   0   0   0   f   v   +) ;; ghin(غ)
+   (g    -   0   0   0   0   f   v   +) ;; ghin(غ) voiced dorsal velar non sibilant fricative
+
    (gg   -   0   0   0   0   f   v   +) ;; ghin+shada
 
-   (f    -   0   0   0   0   f   b   -) ;; fa(ف)
+   (f    -   0   0   0   0   f   b   -) ;; fa(ف) Voiceless labiodental fricative
    (ff   -   0   0   0   0   f   b   -) ;; fa+shada
 
-   (q    -   0   0   0   0   s   v   -) ;;qaf(ق)
+   (q    -   0   0   0   0   s   v   -) ;;qaf(ق) Voiceless uvular stop
    (qq   -   0   0   0   0   s   v   -) ;;qaf+shada
 
-   (k    -   0   0   0   0   s   v   -) ;;kaf(ك)
+   (k    -   0   0   0   0   s   v   -) ;;kaf(ك) Voiceless velar stop
    (kk   -   0   0   0   0   s   v   -) ;;kaf+shada
 
-   (l    -   0   0   0   0   l   a   +) ;;lam(ل)
-   (ll   -   0   0   0   0   l   a   +) ;;lam+shada
+   (l    -   0   0   0   0   r   a   +) ;;lam(ل) Voiced dental, alveolar and postalveolar lateral approximants
+   (ll   -   0   0   0   0   r   a   +) ;;lam+shada
 
-   (m    -   0   0   0   0   n   l   +) ;;mim(م)
+   (m    -   0   0   0   0   n   l   +) ;;mim(م) Voiced bilabial nasal
    (mm   -   0   0   0   0   n   l   +) ;;mim+shada
 
-   (n    -   0   0   0   0   n   a   +) ;;noun(ن)
+   (n    -   0   0   0   0   n   a   +) ;;noun(ن) Voiced dental, alveolar and postalveolar nasals
    (nn   -   0   0   0   0   n   a   +) ;;noun+shada 
 
-   (h    -   0   0   0   0   f   g   -) ;; ha(هـ)
-   (hh   -   0   0   0   0   f   g   -) ;; ha+shada
+   (h    -   0   0   0   0   f   g   -) ;; ha(هـ) Voiceless glottal fricative
+   (hh   -   0   0   0   0   f   g   -) ;; ha+shada 
 
-   (w    -   0   0   0   0   r   l   +) ;;wa(و)
+   (w    -   0   0   0   0   r   l   +) ;;wa(و) Voiced labio-velar approximant
    (ww   -   0   0   0   0   r   l   +) ;;wa+shada
 
-   (y    -   0   0   0   0   r   p   +) ;;ya(ي)
+   (y    -   0   0   0   0   r   p   +) ;;ya(ي) Voiced palatal approximant
    (yy   -   0   0   0   0   r   p   +) ;;ya+shada
 
-   (v    -   0   0   0   0   f   b   +) ;;vidéo
-
+   (v    -   0   0   0   0   f   b   +) ;;vidéo 
+	; TODO: add letter p and g as extension of arabic to read forign nouns
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
    (a    +   s   3   2   -   0   0   0) ;;fatha
