@@ -356,17 +356,17 @@ Basic lexicon should (must ?) have basic letters, symbols and punctuation."
 '("nt" nil (((n i t) 0))))
 ;;m=فيديو   
 (lex.add.entry  
-'("fydyw" nil (((v i) 0) ((d y uu) 0))))
+'("fydyw" nil (((v i) 0) ((d y uua) 0))))
 ;;m=فيديو   
 (lex.add.entry  
-'("fiydoyuw" nil (((v i) 0) ((d y uu) 0))))
+'("fiydoyuw" nil (((v i) 0) ((d y uua) 0))))
 ;;m=الفيديو   
 (lex.add.entry  
-'("Alfydyw" nil (((ah a l) 0) ((v i) 0) ((d y uu) 0))))
+'("Alfydyw" nil (((ah a l) 0) ((v i) 0) ((d y uua) 0))))
 (lex.add.entry  
-'("Alofiydoyuw" nil (((ah a l) 0) ((v i) 0) ((d y uu) 0))))	
+'("Alofiydoyuw" nil (((ah a l) 0) ((v i) 0) ((d y uua) 0))))	
 (lex.add.entry  
-'("Alofiydoyuwu" nil (((ah a l) 0) ((v i) 0) ((d y uu) 0))))
+'("Alofiydoyuwu" nil (((ah a l) 0) ((v i) 0) ((d y uua) 0))))
 
 )
 
@@ -604,7 +604,7 @@ t if this is a syl break, nil otherwise."
   (;;start list
 	
 	;;first list unicode
-	  ( cs > < } & \ b t ^ j H x d * r z s $ S D T Z E g f q k l m n h | ) ;;consonants
+	  ( cs > < } & "\'" b t ^ j H x d * r z s $ S D T Z E g f q k l m n h w y | ) ;;consonants
 	  ( ept D S T Z g x q ) ;;emphatics
 	  ( fwe g x ) ;;forwardEmphatics
 	  ( amcsn l w y p ) ;;ambiguousConsonant ;;These consonants are only unambiguous in certain contexts
@@ -615,7 +615,7 @@ t if this is a syl break, nil otherwise."
 
 	;;the list used after rules
 	  ( vy a i u ) ;;vowel
-	  ( cnt ah b t ^ j H x d th r z s ch S D T Z E g f q l m n h w y ) ;;consonant
+	  ( cnt ah b t ^ j H x d th r z s ch S D T Z E g f q k l m n h w y ) ;;consonant
 
 
   );;end list
@@ -625,58 +625,151 @@ t if this is a syl break, nil otherwise."
 
 	  ( # [ s i l ] # = sil );;
 
-	;;;; Al chamsiya
-	  ( [ A l t ~ ] = ah a tt )
-	  ( [ A l ^ ~ ] = ah a ^^ )
-	  ( [ A l d ~ ] = ah a dd )
-	  ( [ A l * ~ ] = ah a thh )
-	  ( [ A l r ~ ] = ah a rr )
-	  ( [ A l z ~ ] = ah a zz )
-	  ( [ A l s ~ ] = ah a ss )
-	  ( [ A l $ ~ ] = ah a chh )
-	  ( [ A l S ~ ] = ah a SS )
-	  ( [ A l D ~ ] = ah a DD )
-	  ( [ A l T ~ ] = ah a TT )
-	  ( [ A l Z ~ ] = ah a ZZ )
-	  ( [ A l l ~ ] = ah a ll )
-	  ( [ A l n ~ ] = ah a nn )
+	;;;; Al chamsiya fi awal al kalima
+	  ( # [ A l ] t = ah a )
+	  ( # [ A l ] ^ = ah a )
+	  ( # [ A l ] d = ah a )
+	  ( # [ A l ] * = ah a )
+	  ( # [ A l ] r = ah a )
+	  ( # [ A l ] z = ah a )
+	  ( # [ A l ] s = ah a )
+	  ( # [ A l ] $ = ah a )
+	  ( # [ A l ] S = ah a )
+	  ( # [ A l ] D = ah a )
+	  ( # [ A l ] T = ah a )
+	  ( # [ A l ] Z = ah a )
+	  ( # [ A l ] l = ah a )
+	  ( # [ A l ] n = ah a )
+	;;;;
+
+	;;;; Al chamsiya fi wasat al kalima
+	  ( [ a A l ] t = a )
+	  ( [ a A l ] ^ = a )
+	  ( [ a A l ] d = a )
+	  ( [ a A l ] * = a )
+	  ( [ a A l ] r = a )
+	  ( [ a A l ] z = a )
+	  ( [ a A l ] s = a )
+	  ( [ a A l ] $ = a )
+	  ( [ a A l ] S = a )
+	  ( [ a A l ] D = a )
+	  ( [ a A l ] T = a )
+	  ( [ a A l ] Z = a )
+	  ( [ a A l ] l = a )
+	  ( [ a A l ] n = a )
+
+	  ( [ i A l ] t = i )
+	  ( [ i A l ] ^ = i )
+	  ( [ i A l ] d = i )
+	  ( [ i A l ] * = i )
+	  ( [ i A l ] r = i )
+	  ( [ i A l ] z = i )
+	  ( [ i A l ] s = i )
+	  ( [ i A l ] $ = i )
+	  ( [ i A l ] S = i )
+	  ( [ i A l ] D = i )
+	  ( [ i A l ] T = i )
+	  ( [ i A l ] Z = i )
+	  ( [ i A l ] l = i )
+	  ( [ i A l ] n = i )
+	;;;;
+
+	;;;; Al kamariya fi awal al kalima
+	  ( # [ A l o ] < = ah a l )
+	  ( # [ A l o ] > = ah a l )
+	  ( # [ A l o ] | = ah a l )
+	  ( # [ A l o ] b = ah a l )
+	  ( # [ A l o ] j = ah a l )
+	  ( # [ A l o ] H = ah a l )
+	  ( # [ A l o ] x = ah a l )
+	  ( # [ A l o ] E = ah a l )
+	  ( # [ A l o ] g = ah a l )
+	  ( # [ A l o ] f = ah a l )
+	  ( # [ A l o ] q = ah a l )
+	  ( # [ A l o ] k = ah a l )
+	  ( # [ A l o ] m = ah a l )
+	  ( # [ A l o ] h = ah a l )
+	  ( # [ A l o ] w = ah a l )
+	  ( # [ A l o ] y = ah a l )
+	;;;;
+
+	;;;; Al kamariya fi wasat al kalima
+	  ( [ a A l o ] < = a l )
+	  ( [ a A l o ] > = a l )
+	  ( [ a A l o ] | = a l )
+	  ( [ a A l o ] b = a l )
+	  ( [ a A l o ] j = a l )
+	  ( [ a A l o ] H = a l )
+	  ( [ a A l o ] x = a l )
+	  ( [ a A l o ] E = a l )
+	  ( [ a A l o ] g = a l )
+	  ( [ a A l o ] f = a l )
+	  ( [ a A l o ] q = a l )
+	  ( [ a A l o ] k = a l )
+	  ( [ a A l o ] m = a l )
+	  ( [ a A l o ] h = a l )
+	  ( [ a A l o ] w = a l )
+	  ( [ a A l o ] y = a l )
+
+	  ( [ i A l o ] < = i l )
+	  ( [ i A l o ] > = i l )
+	  ( [ i A l o ] | = i l )
+	  ( [ i A l o ] b = i l )
+	  ( [ i A l o ] j = i l )
+	  ( [ i A l o ] H = i l )
+	  ( [ i A l o ] x = i l )
+	  ( [ i A l o ] E = i l )
+	  ( [ i A l o ] g = i l )
+	  ( [ i A l o ] f = i l )
+	  ( [ i A l o ] q = i l )
+	  ( [ i A l o ] k = i l )
+	  ( [ i A l o ] m = i l )
+	  ( [ i A l o ] h = i l )
+	  ( [ i A l o ] w = i l )
+	  ( [ i A l o ] y = i l )
+	;;;;
+
+	;;;;
+	  ( # [ A l ~ ] = ah a ll )
+	  ( [ a A l ~ ] = a ll )
+	  ( [ i A l ~ ] = i ll )
 	;;;;
 
 	;;;;shada+kasratayn (mouchkil : al kasratayn touktaban kabla shada wa la nastati3 tahwil shada wahdaha)
-	  ( [ < K ~ ] = ahh i n )
-	  ( [ b K ~ ] = bb i n )
-	  ( [ t K ~ ] = tt i n )
-	  ( [ ^ K ~ ] = ^^ i n )
-	  ( [ j K ~ ] = jj i n )	
-	  ( [ H K ~ ] = HH i n )  
-	  ( [ x K ~ ] = xx i n )
-	  ( [ d K ~ ] = dd i n )
-	  ( [ * K ~ ] = thh i n )
-	  ( [ r K ~ ] = rr i n )
-	  ( [ z K ~ ] = zz i n )
-	  ( [ s K ~ ] = ss i n )
-	  ( [ $ K ~ ] = chh i n )
-	  ( [ S K ~ ] = SS i n )
-	  ( [ D K ~ ] = DD i n )
-	  ( [ T K ~ ] = TT i n )
-	  ( [ Z K ~ ] = ZZ i n )
-	  ( [ E K ~ ] = EE i n )
-	  ( [ g K ~ ] = gg i n )
-	  ( [ f K ~ ] = ff i n )
-	  ( [ q K ~ ] = qq i n )
-	  ( [ k K ~ ] = kk i n )
-	  ( [ l K ~ ] = ll i n )
-	  ( [ m K ~ ] = mm i n )
-	  ( [ n K ~ ] = nn i n )
-	  ( [ h K ~ ] = hh i n )
-	  ( [ w K ~ ] = ww i n )
-	  ( [ y K ~ ] = yy i n )
+	  ( [ < K ~ ] = ahh ia n )
+	  ( [ b K ~ ] = bb ia n )
+	  ( [ t K ~ ] = tt ia n )
+	  ( [ ^ K ~ ] = ^^ ia n )
+	  ( [ j K ~ ] = jj ia n )	
+	  ( [ H K ~ ] = HH ia n )  
+	  ( [ x K ~ ] = xx ia n )
+	  ( [ d K ~ ] = dd ia n )
+	  ( [ * K ~ ] = thh ia n )
+	  ( [ r K ~ ] = rr ia n )
+	  ( [ z K ~ ] = zz ia n )
+	  ( [ s K ~ ] = ss ia n )
+	  ( [ $ K ~ ] = chh ia n )
+	  ( [ S K ~ ] = SS ia n )
+	  ( [ D K ~ ] = DD ia n )
+	  ( [ T K ~ ] = TT ia n )
+	  ( [ Z K ~ ] = ZZ ia n )
+	  ( [ E K ~ ] = EE ia n )
+	  ( [ g K ~ ] = gg ia n )
+	  ( [ f K ~ ] = ff ia n )
+	  ( [ q K ~ ] = qq ia n )
+	  ( [ k K ~ ] = kk ia n )
+	  ( [ l K ~ ] = ll ia n )
+	  ( [ m K ~ ] = mm ia n )
+	  ( [ n K ~ ] = nn ia n )
+	  ( [ h K ~ ] = hh ia n )
+	  ( [ w K ~ ] = ww ia n )
+	  ( [ y K ~ ] = yy ia n )
 	;;
-	  ( [ > K ~ ] = ahh i n )		;;alif fawkaha hamza+shada
-	  ( [ "\'" K ~ ] = ahh i n )	;;hamza+shada
-	  ( [ } K ~ ] = ahh i n )		;;alif maksora fawkaha hamza+shada
-	  ( [ & K ~ ] = ahh i n )		;;waw fawkaha hamza+shada 
-	  ( [ | K ~ ] = ahh aa i n)	;;alif almad+shada 
+	  ( [ > K ~ ] = ahh ia n )		;;alif fawkaha hamza+shada
+	  ( [ "\'" K ~ ] = ahh ia n )	;;hamza+shada
+	  ( [ } K ~ ] = ahh ia n )		;;alif maksora fawkaha hamza+shada
+	  ( [ & K ~ ] = ahh ia n )		;;waw fawkaha hamza+shada 
+	  ( [ | K ~ ] = ahh aa ia n)	;;alif almad+shada 
 	;;;;
 	
 	;;;;shada
@@ -755,47 +848,115 @@ t if this is a syl break, nil otherwise."
 	;;
 
 	;;;;do some normalisation
-	  ( [ A F ] = a n )	;;fathatan+alif=fathatan
-	  ( [ F A ] = a n)
-	  ( [ F ] = a n)
-	  ( [ N ] = u n)
-	  ( [ K ] = i n)
-	;;;;
-
-	;;;;alif al kamariya
-	  ( # [ A ] = ah a)
+	  ( [ A F ] = a n )	;;alif+fathatan
+	  ( [ F A ] = a n )	;;fathatan+alif
+	  ( [ F ] = a n )	;;fathatan
+	  ( [ N ] = ua n )	;;damatan
+	  ( [ K ] = ia n )	;;kasratan
 	;;;;
 
 	;;;;alif maksora
-	  ( [ a Y ] = aa)	
-	  ( [ Y a ] = aa)
-	  ( [ i Y ] = ii)
-	  ( [ Y ] = aa)			
+	  ( [ a Y ] = aa )	
+	  ( [ Y a ] = aa )
+	  ( [ i Y ] = ii )
+	  ( [ Y ] = aa )			
+	;;;;
+
+	;;;;alif+(ص,ض,ط,ظ,ق)
+	  ( [ a A ] S = AA )	;;fatha+alif
+	  ( [ a A ] D = AA )	
+	  ( [ a A ] T = AA )	
+	  ( [ a A ] Z = AA )	
+	  ( [ a A ] q = AA )	
+
+	  ( [ A ] S = AA )	;;alif
+	  ( [ A ] D = AA )
+	  ( [ A ] T = AA )	
+	  ( [ A ] Z = AA )	
+	  ( [ A ] q = AA )		
 	;;;;
 
 	;;;;alif
-	  ( [ a A ] = aa)	;;fatha+alif
-	  ( [ A ] = aa)		;;alif
+	  ( [ a A ] = aa )	;;fatha+alif
+	  ( [ A ] = aa )	;;alif
+	;;;;
+
+	;;;;waw+(ص,ض,ط,ظ,ق) fiha chak
+	  ( [ u w ] S = UU )	;;dama+waw+harf
+	  ( [ u w ] D = UU )	
+	  ( [ u w ] T = UU )	
+	  ( [ u w ] Z = UU )	
+	  ( [ u w ] q = UU )	
+
+	  ( cs [ w ] S = UU )	;;dama+waw+harf
+	  ( cs [ w ] D = UU )
+	  ( cs [ w ] T = UU )	
+	  ( cs [ w ] Z = UU )	
+	  ( cs [ w ] q = UU )		
 	;;;;
 
 	;;;;waw
-	  ( [ u w A ] # = uu)	;;dama+waw+alif
-	  ( [ u w ] # = uu)	;;dama+waw
-	  ( [ ~ w ] # = uu)	;;shada+waw
-	  ( [ u w ] cnt = uu)	;;dama+waw+harf
+	  ( [ u w A ] # = uu )	;;dama+waw+alif FIN
+	  ( [ u w ] # = uu )	;;dama+waw FIN
+	  ( [ ~ w ] # = uu )	;;shada+waw FIN
+	  ( [ u w ] cs = uu )	;;dama+waw+harf
+	  ( cs [ w ] cs = uu )	;;dama+waw+harf
 	;;;;
 
-	;;;;kasra+ya
-	  ( [ i y ] # = ii)
-	  ( [ ~ y ] # = ii)
-	  ( [ i y ] cnt = ii)
+	;;;;ya+(ص,ض,ط,ظ,ق) fiha chak
+	  ( [ i y ] S = II )	;;kasra+ya+consonant
+	  ( [ i y ] D = II )	
+	  ( [ i y ] T = II )	
+	  ( [ i y ] Z = II )	
+	  ( [ i y ] q = II )	
+
+	  ( cs [ y ] S = II )  ;;consonant+ya+consonant
+	  ( cs [ y ] D = II )  
+	  ( cs [ y ] T = II )  
+	  ( cs [ y ] Z = II )  
+	  ( cs [ y ] q = II )  
+	;;;;
+
+	;;;;ya
+	  ( [ i y ] # = ii )	;;kasra+ya FIN
+	  ( [ ~ y ] # = ii )	;;shada+ya FIN
+	  ( [ i y ] cs = ii )	;;kasra+ya+consonant
+	  ( cs [ y ] cs = ii )  ;;consonant+ya+consonant
+	;;;;
+
+	;;;;phone(ia)
+	  ( [ i ] cs o # = ia )	;;kasra+consonant+soukoun FIN
+	  ( [ i ] cs # = ia )	;;kasra+consonant FIN
+	;;;;
+
+	;;;;phone(ua)
+	  ( [ u ] cs o # = ua )	;;dama+consonant+soukoun FIN
+	  ( [ u ] cs # = ua )	;;dama+consonant FIN
 	;;;;
 
         ;;;;ta marbota
-	  ( [ p ] # =  )
-	  ( [ p ] = t )
+	  ( [ p ] # =  )	;;ta marbota FIN
+	  ( [ p ] = t )		;;ta marbota
         ;;;;
  
+        ;;;;vowel+(ص,ض,ط,ظ,ق)
+	  ( [ a ] S = A )
+	  ( [ a ] D = A )
+	  ( [ a ] T = A )
+	  ( [ a ] Z = A )
+	  ( [ a ] q = A )
+	  ( [ i ] S = I )
+	  ( [ i ] D = I )
+	  ( [ i ] T = I )
+	  ( [ i ] Z = I )
+	  ( [ i ] q = I )
+	  ( [ u ] S = U )
+	  ( [ u ] D = U )
+	  ( [ u ] T = U )
+	  ( [ u ] Z = U )
+	  ( [ u ] q = U )
+        ;;;;
+
         ;;;;vowel
 	  ( [ a ] = a )
 	  ( [ i ] = i )
