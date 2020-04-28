@@ -157,24 +157,24 @@
    (a    +   s   3   2   -   0   0   0) ;;fatha
    (aa   +   l   3   2   -   0   0   0) ;;fatha+mad
 
-   (A    +   s   3   2   -   0   0   0) ;; 
-   (AA   +   l   3   2   -   0   0   0) ;;
+   (A    +   s   3   2   -   0   0   0) ;;fatha+(ص,ض,ط,ظ,ق) 
+   (AA   +   l   3   2   -   0   0   0) ;;fatha+mad+(ص,ض,ط,ظ,ق) (fiha chak)
 
    (i    +   s   1   1   -   0   0   0) ;;nawar:i0 kasra
-   (i:   +   s   1   1   -   0   0   0) ;;nawar:i1
+   (ia   +   s   1   1   -   0   0   0) ;;nawar:i1 kasra toukarib al fatha
    (ii   +   l   1   1   -   0   0   0) ;;nawar:ii0 kasra+mad
 
-   (I    +   s   1   1   -   0   0   0) ;;nawar:I0 
-   (II   +   l   1   1   -   0   0   0) ;;nawar:II0
+   (I    +   s   1   1   -   0   0   0) ;;nawar:I0 kasra+(ص,ض,ط,ظ,ق)
+   (II   +   l   1   1   -   0   0   0) ;;nawar:II0 kasra+mad+(ص,ض,ط,ظ,ق) (fiha chak)
 
    (u    +   s   1   3   +   0   0   0) ;;nawar:u0 dama
    (uu   +   l   1   3   +   0   0   0) ;;nawar:uu0 dama+mad
    
-   (U    +   s   1   3   +   0   0   0) ;;nawar:U0
-   (UU   +   l   1   3   +   0   0   0) ;;nawar:UU0
+   (U    +   s   1   3   +   0   0   0) ;;nawar:U0 dama+(ص,ض,ط,ظ,ق)
+   (UU   +   l   1   3   +   0   0   0) ;;nawar:UU0 dama+mad+(ص,ض,ط,ظ,ق) (fiha chak)
 
-   (u:   +   s   1   3   +   0   0   0) ;;nawar:u1
-   (uu:  +   l   1   3   +   0   0   0) ;;nawar:uu1
+   (ua   +   s   1   3   +   0   0   0) ;;nawar:u1 dama toukarib al fatha
+   (uua  +   l   1   3   +   0   0   0) ;;nawar:uu1 (الفيديو) vidyuua
 
    (sil  -   0   0   0   0   0   0   -) ;;
 
